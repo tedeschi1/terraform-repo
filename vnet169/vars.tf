@@ -1,15 +1,24 @@
-
-
-variable "vnet-name" {
-    description = "Name of VM VNET"
+variable "nameofsubnet1" {
     type = string
-    default = "vnet169"
+    description = "Name of Subnet1"
+    default = "fe-subnet"
 }
 
-variable "resource-group-name" {
-    description = "Name of VNET Resource Group"
+variable "nameofsubnet2" {
+    description = "Name of Subnet2"
     type = string
-    default = "rg-vnet169"
+    default = "be-subnet"
+}
+
+variable "vnetresourcegroup" {
+    description = "Name of VNET RG"
+    type = string
+    default = "rg-vnet171"
 }
 
 
+variable "nameofvnet" {
+    description = "Name of VNET to Be Created"
+    type = string
+    default = "vnet171"
+}
